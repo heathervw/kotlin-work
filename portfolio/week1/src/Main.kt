@@ -1,6 +1,6 @@
 // COMP2850 Portfolio: Week 1
 // Program to compute area of a triangle
-
+import kotlin.math.sqrt // imports swuare root
 import kotlin.system.exitProcess // imports the  kotlin library system exit function
 
 fun main(args: Array<String>) {  // allows for arguement input
@@ -13,7 +13,9 @@ fun main(args: Array<String>) {  // allows for arguement input
     val num2 = args[1].toFloat()
     val num3 = args[2].toFloat()
 
-     val result = 0.5f * (num1 + num2  + num3) // area of a triangle operation
-     System.out.printf("Area = %.5f", result) //formatted float output
+    val s = 0.5f * (num1 + num2  + num3) // semiparameter
+    val result = s * ((s - num1) * (s - num2) * (s - num3))
+    val area = sqrt(result)
+    System.out.printf("Area = %.5f", area) //formatted float output
 
 }
