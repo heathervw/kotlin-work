@@ -16,6 +16,6 @@ fun main(args: Array<String>) {  // allows for arguement input
     val s = 0.5f * (num1 + num2  + num3) // semiparameter
     val result = s * ((s - num1) * (s - num2) * (s - num3))
     val area = sqrt(result)
-    System.out.printf("Area = %.5f", area) //formatted float output
+    System.out.printfln("Area = %.5f\n", area) //formatted float output
 
 }
