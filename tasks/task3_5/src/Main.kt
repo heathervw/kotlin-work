@@ -7,4 +7,13 @@ import kotlin.io.path.writeText
 
 fun main() {
     // Add your code here
+    val filePath = Path("test.txt")
+    filePath.writeText("abcd")
+
+    val fileContents = filePath.readText()
+    println( fileContents)
+
+    val newContents = filePath.writeText("efg")
+
+    val moreContent = filePath.appendText("hij")
 }
