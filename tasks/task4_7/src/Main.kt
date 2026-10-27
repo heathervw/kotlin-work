@@ -11,9 +11,9 @@ fun main(args: Array<String>) {
         exitProcess(1)
     }
 
-    // val filePath = Path(args[0])
-    // val lines = listOf("xxx", "xx", "xxxxx", "xxx")
-    // filePath.writeLines(lines)
+    val filePath = Path(args[0])
+    val lines = listOf("xxx", "xx", "xxxxx", "xxx")
+    filePath.writeLines(lines)
 
     var lineCounter = 0
     var longestLen = 0
