@@ -14,7 +14,7 @@ fun mean(data:Data) {
     println("The average is ${data.average()}")
 }
 
-fun median(data:Data) {
+fun median(data:Data) : Float {
     val sort = data.sorted()
     val  med =  when {
         sort.isEmpty() -> throw IllegalArgumentException()
@@ -23,6 +23,7 @@ fun median(data:Data) {
         }
 
     println("The median is $med")
+    return med
 }
 
 

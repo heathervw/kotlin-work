@@ -14,7 +14,27 @@ class MedianTest : FreeSpec({
         shouldThrow<IllegalArgumentException> {
             median(listOf())
         }
+        }
+    // Write four more tests here
+
+    "Median when size=1" {
+        val num = listOf(4.0f)
+        median(num) shouldBe 4.0f
     }
 
-    // Write four more tests here
+    "Median when size=2" {
+        val num = listOf(4.0f,3.0f)
+        median(num) shouldBe 3.5f
+    }
+
+    "Median when size=3" {
+        val num = listOf(4.0f,3.0f,6.0f)
+        median(num) shouldBe 4.0f
+    }
+
+    "Median when size=4" {
+        val num = listOf(4.0f, 3.0f, 6.0f, 9.0f)
+        median(num) shouldBe 5.0f
+    }
 })
+
